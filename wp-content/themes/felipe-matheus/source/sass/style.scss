@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap");
+
+// @import "home";
+@import "header";
+@import "footer";
+@import "home";
+
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  body {
+    font-family: "Prompt";
+    margin: 0;
+    padding-top: 88px;
+    @media (max-width: 992px) {
+      padding-top: 80px;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    --primary-blue: #00205b;
+    --secondary-blue: #0057b8;
+    --secondary-blue-hover: #1d428a;
+    --primary-white: #fdfdfc;
+    --background-gray: #eeeeee;
+    --hover-button-white: #c8d8eb;
+    --primary-text: #3e3e3e;
+    --primary-light: #dde5ed;
+  }
+  .container {
+    padding: 0px 28px;
+
+    @media (min-width: 992px) {
+      padding: 0px 12px;
+    }
+  }
+  span {
+    font-style: normal;
+    font-family: "Prompt";
+    font-weight: 500;
+    color: #3e3e3e;
+  }
+  a {
+    text-decoration: none;
+    font-family: "Prompt";
+  }
+  button {
+    font-family: "Prompt";
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+  p {
+    font-family: "Prompt";
+    font-style: normal;
+    font-weight: 400;
+    color: #3e3e3e;
+    font-size: 16px;
+    line-height: 22px;
+
+    @media (min-width: 992px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--primary-blue);
+    @media (max-width: 992px) {
+      font-size: 28px;
+    }
+  }
+  input {
+    width: 100%;
+    font-family: "Prompt";
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  .primary-button {
+    background: var(--secondary-blue);
+    border-radius: 4px;
+    color: var(--primary-white);
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    &:hover {
+      background: var(--secondary-blue-hover);
+    }
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 98;
+  }
+}
